@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+.container {
+    width: min(92%, 700px);
+    margin: 40px auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+header h1 {
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #666;
+}
+
+.card,
+.summary-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.summary-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.summary-card strong {
+    font-size: 26px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin: 14px 0 6px;
+    font-weight: 600;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button {
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    margin-top: 16px;
+    background: #222;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.secondary {
+    margin-top: 0;
+    background: #666;
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expense-list {
+    margin-top: 12px;
+}
+
+.expense-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid #eee;
+    padding: 14px 0;
+}
+
+.expense-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.expense-item {
+    font-weight: 600;
+}
+
+.expense-amount {
+    color: #444;
+}
+
+.delete-btn {
+    margin: 0;
+    padding: 8px 12px;
+    background: #b42318;
+}
+
+.empty {
+    color: #777;
+    text-align: center;
+    padding: 20px;
+}
+
+.message {
+    min-height: 20px;
+    margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+    .container {
+        margin: 20px auto;
+    }
+
+    .card,
+    .summary-card {
+        padding: 18px;
+    }
+
+    .summary-card {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
